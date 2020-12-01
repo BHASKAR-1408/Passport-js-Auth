@@ -19,8 +19,5 @@ app.use("/", linkedin);
 require("./Routes/linkedin_oauth2")(linkedin, passport);
 
 const server = app.listen(3000, function () {
-  const host = server.address().address;
-  const port = server.address().port;
-  console.log(host, port);
   console.log("server is running mode....!");
 });
